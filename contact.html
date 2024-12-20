@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLife Solutions - Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #404040;
+            background-color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #8ad06c;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end; 
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #8ad06c;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #404040;
+        }
+
+        .container {
+            padding: 20px;
+            margin-left: 11%;
+            margin-right: 11%;
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #404040;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        form input, form textarea {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        form button {
+            padding: 10px;
+            background-color: #8ad06c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+       
+        form button:hover {
+            background-color: #76c564;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #8ad06c;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #8ad06c;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+       
+        @media (max-width: 1024px) {
+             header {
+                margin-left: 5%;
+                margin-right: 5%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-right: 0;
+                flex-direction: row; 
+                justify-content: center;
+            }
+
+            .container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            form {
+                width: 90%;  
+            }
+        }
+
+        @media (max-width: 768px) {
+             header {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+
+            .container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            form {
+                width: 100%; 
+            }
+
+            footer {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <hr style="border:0;height:10px;background-color: #8ad06c;margin-top:0px;width:100%">
+
+    <header>
+        <h1 class="playwrite-au-vic-guides-regular">EcoLife Solutions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoLife Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>

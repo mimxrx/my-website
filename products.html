@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoLife Solutions - Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Playwrite+AU+VIC+Guides&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            color: #404040;
+            background-color: white;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #8ad06c;
+            font-size: 36px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between; 
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: #8ad06c;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #404040;
+        }
+
+        .container {
+            padding: 20px;
+            margin-left: 11%;
+            margin-right: 11%;
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #404040;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+            margin-bottom: 10%;
+        }
+
+        .product-item {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            width: 250px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(138, 208, 108, 0.8);
+        }
+
+        .product-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .product-item h3 {
+            color: #8ad06c;
+            margin: 15px 0 10px;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #8ad06c;
+            color: white;
+            padding: 10px 0;
+            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        hr {
+            border: 0;
+            height: 2px;
+            background-color: #8ad06c;
+            width: 80%;
+            margin: 20px auto;
+        }
+
+       
+        @media (max-width: 1024px) {
+            header {
+                margin-left: 5%;
+                margin-right: 5%;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav {
+                margin-right: 0;
+                flex-direction: row;  
+                justify-content: center;
+            }
+
+            .container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .product-item {
+                width: 45%;  
+            }
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+
+            header h1 {
+                font-size: 28px;
+            }
+
+            nav {
+                width: 100%;
+                justify-content: space-around;
+                margin-top: 10px;
+            }
+
+            nav a {
+                padding: 10px 15px;
+            }
+
+            .container {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+
+            .product-item {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            footer {
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <hr style="border:0;height:10px;background-color: #8ad06c;margin-top:0px;width:100%">
+
+    <header>
+        <h1 class="playwrite-au-vic-guides-regular">EcoLife Solutions</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <hr>
+
+    <div class="container">
+        <h2>Our Products</h2>
+        <div class="product">
+            <div class="product-item">
+                <img src="photos/bag.jpg" alt="Eco-Friendly Tote Bag">
+                <h3>Eco-Friendly Tote Bag</h3>
+                <p>Price: $15</p>
+                <p>Carry your essentials in style with our durable, reusable tote bag.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/Food Containers.jpg" alt="Compostable Food Containers">
+                <h3>Compostable Food Containers</h3>
+                <p>Price: $25</p>
+                <p>Perfect for meal prepping, these containers are 100% compostable.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/toothbrush.jpg" alt="Bamboo Toothbrush">
+                <h3>Bamboo Toothbrush</h3>
+                <p>Price: $10</p>
+                <p>Switch to our biodegradable bamboo toothbrush for a greener smile.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/Notebook.jpg" alt="Recycled Paper Notebook">
+                <h3>Recycled Paper Notebook</h3>
+                <p>Price: $8</p>
+                <p>Jot down your ideas in our sustainable notebook made from recycled paper.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/cup.jpg" alt="Reusable Coffee Cup">
+                <h3>Reusable Coffee Cup</h3>
+                <p>Price: $12</p>
+                <p>Enjoy your coffee guilt-free with our spill-proof reusable coffee cup.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/comb.jpg" alt="Eco-Friendly Comb">
+                <h3>Eco-Friendly Comb</h3>
+                <p>Price: $7</p>
+                <p>Style your hair with our durable comb made from sustainable materials.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/loofah.jpg" alt="Natural Loofah">
+                <h3>Natural Loofah</h3>
+                <p>Price: $5</p>
+                <p>Exfoliate your skin naturally with our biodegradable loofah sponge.</p>
+            </div>
+            <div class="product-item">
+                <img src="photos/straw.jpg" alt="Reusable Straw Set">
+                <h3>Reusable Straw Set</h3>
+                <p>Price: $10</p>
+                <p>Make every sip eco-friendly with our stainless steel reusable straws.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 EcoLife Solutions. All rights reserved.</p>
+    </footer>
+</body>
+</html>
